@@ -6,3 +6,10 @@ node_js:
 - '0.6'
 before_script:
 - npm install -g jasmine-node
+deploy:
+  provider: heroku
+  api_key:
+    secure: KF0ysm7wLfspmHo+vwvs6W0TL5yYhoqtFW6zyk7dAMRcjhBqYi73VUlgpEamLiJY4UhQG6wHjz0HdOWkqlvPpQNhv4cfi26bU0/GGyWD7G0XhM5uZI/hmj6LsqCZsmDUHuQ3jMQ8ifSuxl698kNHqeUR44SI0uwvAmc9w1KpJKk4kDEt62mP/EiALTEJ5FQtaFXTZI1Qn+jT14Z3aHsuGXNpwgrY/qbBskn5cYx7G2mxKkqLHWFylN04YsiFxCEVfiY07nTEx3/9kDUWlGwGvWd195R7vWizOj6yu3jrsMz7SwsDMukGzPzh/ihY5Yip+qSobDeUbOB3nwE34HrENWaqjI7vV++XAwUNwtcU9X9VIiqgKJzeE1PGtUEFYOOWEebLeMp/PMECjAXBbCYWjdarW30BhLCeKZcJpi/dBtnz1Med2O0oYWdQEUOdJnaE4P0ujLRq/W0jnMt7CJgmcsxM49nBuMRjZptrs2dPlAed94po7mWAzCofD1cQy7xa5YX1yNvOjx+EZoTwaBbESycmwSirCO2rVTayfDhtZWRdq0OqnKDozu0tC2JzCX6S3U2h7q3ADQQV7xv8ijbpu4y+fP0g30xqqLlDag5QaKUkN57GktP7xQm7RNxax4hYmlWwahVRMO7LiEuzxmm5LqlpLg9Qo9pNZXeTCMEY4cg=
+  app: dogfoodcon-2015
+  on:
+    repo: kendaleiv/dogfoodcon-2015
